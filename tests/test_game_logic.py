@@ -15,6 +15,7 @@ def test_guess_too_low():
     outcome, _ = check_guess(40, 50)
     assert outcome == "Too Low"
 
+# FIXED the "Go HIGHER / Go LOWER" bug using agent mode
 
 # Regression tests for the "Go HIGHER / Go LOWER" bug:
 # 1. The hint messages were swapped (a too-high guess said "Go HIGHER!").

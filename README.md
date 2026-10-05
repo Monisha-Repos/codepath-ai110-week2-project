@@ -43,12 +43,7 @@ Describe your fixed game in numbered steps so a reader can follow along without 
 ![Screenshot of Project Demo](demo_screeshot.png)
 
 ## 🧪 Test Results
-
-```
-# Paste your pytest output here, e.g.:
-# pytest tests/
-# ========================= X passed in 0.XXs =========================
-```
+![pytest results](image.png)
 
 ## 🚀 Stretch Features
 

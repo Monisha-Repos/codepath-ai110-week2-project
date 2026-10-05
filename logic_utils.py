@@ -18,7 +18,14 @@ def check_guess(guess, secret):
 
     outcome examples: "Win", "Too High", "Too Low"
     """
-    raise NotImplementedError("Refactor this function from app.py into logic_utils.py")
+    if guess == secret:
+        return "Win", "🎉 Correct!"
+    # FIX: Hint messages were swapped (a too-high guess said "Go HIGHER!").
+    # Also removed the string-comparison fallback, which compared numbers
+    # lexicographically (e.g. "9" > "50").
+    if guess > secret:
+        return "Too High", "📉 Go LOWER!"
+    return "Too Low", "📈 Go HIGHER!"
 
 
 def update_score(current_score: int, outcome: str, attempt_number: int):

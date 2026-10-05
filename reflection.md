@@ -23,7 +23,11 @@ Document at least 3 bugs you found. Add rows as needed.
 ## 2. How did you use AI as a teammate?
 
 - Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
+I used Claude for this project.
+
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
+AI found and fixed the new-game button bug correctly reseting the user attempts and allowed the user to input new guesses. AI noted that ending a game sets status to "won"/"lost", but New Game never resets it to "playing," so the st.stop() guard keeps blocking guesses after rerun. I verified the results by mkaing and running pytests and also testing it in the UI.
+
 - Give one example of an AI suggestion you did not accept as written (including what the AI suggested, why you rejected or changed it, and how you verified your version). It does not have to be a suggestion that was wrong: over-engineered, out of scope, harder to read, or a poor fit for this codebase all count.
 
 ---

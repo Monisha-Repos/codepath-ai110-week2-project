@@ -25,21 +25,22 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- Game's purpose is to create a fun and repetitive guessing game simulation
+- The higher and lower hints weren't functioning as expected and the new game button didn't create a new session (didn't allow user input).
+- I swapped the reversed hint messages, made guesses always compare as numbers instead of sometimes as strings, and made New Game reset the status, history and secret so you can keep playing.
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. Enter a value in 'Enter your guess:' input box
+2. Hit submit guess
+3. Read the hint that pops up beneath the submission 
+4. Congrats if you won! Try a harder level by changing the difficulty in the settings menu in the top left corner.
+5. If not, repeat steps 1-4 until you win or you run out of guesses.
+6. Once done with your game, you can start a new game by clicking the 'New Game' button
 
-**Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
+![Screenshot of Project Demo](demo_screeshot.png)
 
 ## 🧪 Test Results
 
